@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 128, 185);
+}
+
+.box {
+    width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 80%;
+}
+
+p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 5px;
+}
+
+#login {
+    font-size: 36px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#left_side {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#right_side {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    /* Added background color with transparency */
+    border-radius: 10px;
+    height: 70%;
+    width: 100%;
+    /* Added border radius for rounded corners */
+}
+
+input[type="submit"] {
+    background: #5E5DF0;
+    border-radius: 999px;
+    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: Inter, Helvetica, "Apple Color Emoji", "Segoe UI Emoji", NotoColorEmoji, "Noto Color Emoji", "Segoe UI Symbol", "Android Emoji", EmojiSymbols, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    opacity: 1;
+    outline: 0 solid transparent;
+    padding: 8px 18px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 70%;
+    word-break: break-word;
+    border: 0;
+}
+
+input[type="submit"]:hover {
+    background-color: #003366;
+    /* Darker blue color on hover */
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid black;
+    width: 80%;
+}
+
+input[type=text]::after {
+    border: none;
+    border-bottom: 2px solid black;
+    width: 80%;
+}
+
+input[type=password] {
+    border: none;
+    border-bottom: 2px solid black;
+    width: 80%;
+}
+
+form {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    /* Center-aligns form content */
+}
+
+.bar {
+    margin-left: 0;
+    height: 40%;
+    width: 20px;
+    background: white;
+    border-radius: 16px;
+}
