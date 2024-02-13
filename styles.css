@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body {
     margin: 0;
     height: 100vh;
@@ -27,14 +29,17 @@ p {
     color: white;
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 46px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
     margin: 5px;
 }
 
 #login {
     font-size: 36px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Protest Strike", sans-serif;
 }
 
 #left_side {
@@ -48,23 +53,20 @@ p {
 }
 
 #right_side {
-    padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: white;
-    /* Added background color with transparency */
     border-radius: 10px;
     height: 70%;
     width: 100%;
-    /* Added border radius for rounded corners */
 }
 
 input[type="submit"] {
-    background: #5E5DF0;
+    background: rgb(41, 128, 185);
     border-radius: 999px;
-    box-shadow: #5E5DF0 0 10px 20px -10px;
+    box-shadow: rgb(41, 128, 185) 0 10px 20px -10px;
     box-sizing: border-box;
     color: #FFFFFF;
     cursor: pointer;
@@ -84,25 +86,18 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #003366;
-    /* Darker blue color on hover */
+    background-color: rgb(11, 93, 148);
 }
 
 input[type=text] {
     border: none;
-    border-bottom: 2px solid black;
-    width: 80%;
-}
-
-input[type=text]::after {
-    border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(41, 128, 185);
     width: 80%;
 }
 
 input[type=password] {
     border: none;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(41, 128, 185);
     width: 80%;
 }
 
@@ -111,7 +106,6 @@ form {
     justify-content: center;
     text-align: center;
     width: 80%;
-    /* Center-aligns form content */
 }
 
 .bar {
@@ -120,4 +114,39 @@ form {
     width: 20px;
     background: white;
     border-radius: 16px;
+}
+
+#forgotpass {
+    color: rgb(165, 165, 165);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: rgb(41, 128, 185);
+    }
+    .box {
+        width: 90%;
+        height: 90%;
+    }
+    .bar {
+        height: 20px;
+        width: 70%;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #left_side,
+    #right_side {
+        width: 100%;
+    }
+    input[type="submit"] {
+        width: 80%;
+    }
+    input[type=text],
+    input[type=password] {
+        width: 90%;
+    }
+    p {
+        font-size: 24px;
+    }
 }
