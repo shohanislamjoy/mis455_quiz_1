@@ -52,6 +52,9 @@ p {
     width: 100%;
 }
 
+
+/* form side */
+
 #right_side {
     display: flex;
     flex-direction: column;
@@ -119,6 +122,9 @@ form {
 #forgotpass {
     color: rgb(165, 165, 165);
 }
+
+
+/* tried to make it responsive fo mobile */
 
 @media only screen and (max-width: 768px) {
     body {
